@@ -9,4 +9,4 @@ let pokemonList = [
 ];
 
 
-document.write(pokemonList[5].name);
+console.log(pokemonList[5].name);

@@ -32,15 +32,16 @@ let pokemonList = [
 ];
 
 for (let x=0; x < pokemonList.length; x++){
-if (pokemonList[x].height < 1) { //any pokemon smaller than 1 m
-    document.write(pokemonList[x].name + ' (height: ' + pokemonList[x].height + ') - Oh my! you look itty bitty!');
-    document.write("<br />");
-} else if (pokemonList[x].height > 1.4) { //any Pokemon larger than 1.4 m
-    document.write(pokemonList[x].name + ' (height: ' + pokemonList[x].height + ') - Whoa there big fella!');
-    document.write("<br />");
-} else {
-        document.write(pokemonList[x].name + ' (height: ' + pokemonList[x].height + ')');
-    document.write("<br />");
+    if (pokemonList[x].height < 1) { //any pokemon smaller than 1 m
+        document.write(pokemonList[x].name + ' (height: ' + pokemonList[x].height + ') - Oh my! you look itty bitty!');
+        document.write("<br />");
+    } else if (pokemonList[x].height > 1.4) { //any Pokemon larger than 1.4 m
+        document.write(pokemonList[x].name + ' (height: ' + pokemonList[x].height + ') - Whoa there big fella!');
+        document.write("<br />");
+    } else {
+            document.write(pokemonList[x].name + ' (height: ' + pokemonList[x].height + ')');
+        document.write("<br />");
+    }
 }
-}
+
 

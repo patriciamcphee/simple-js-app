@@ -1,4 +1,5 @@
 let pokemonRepository = (function () {
+    //original Pokemon list
     let pokemonList = [
     {
         name: "Ivysaur",

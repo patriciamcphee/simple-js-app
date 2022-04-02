@@ -1,3 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+
+body {
+  font-family: 'Droid Serif';
+  line-height: 2em;
+  font-size: 15px;
+}
+h1, h2, h3 {
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+
 span {
     font-size: 1.2em;
     font-weight: bolder;
@@ -13,3 +32,4 @@ span {
     border: 1px black solid;
     padding : 20px;
   }
+

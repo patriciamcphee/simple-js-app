@@ -1,9 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 
-* {
-  box-sizing: border-box;
-}
+
 
 body {
   font-family: 'Droid Serif';
@@ -17,11 +15,11 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 42px;
 }
 
-h1 {
-  font-size: 36px;
+h2 {
+  font-size: 32px;
 }
 
 /* Pokémon List */

@@ -1,13 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 
-
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Droid Serif';
   line-height: 2em;
   font-size: 15px;
 }
+
+
 h1, h2, h3 {
   font-family: 'Yanone Kaffeesatz';
   font-weight: 400;
@@ -41,6 +45,7 @@ h2 {
   transition-duration: 0.4s;
   cursor: pointer;
   width: 250px;
+  text-transform: capitalize;
 }
 
 .pokemon-button:hover {
@@ -53,4 +58,61 @@ span {
     font-weight: bolder;
   }
   
+/* Modal Styling */
+#modal-container {
+  display: none;
+}
 
+#modal-container.is-visible {
+  position: fixed;
+  padding: 20px;
+  box-sizing:content-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;  /* displays modal in front of main content */
+  overflow: auto; /* allows scrolling content exceeds the height */
+  display: grid; /* centers the modal */
+  text-align: center;
+}
+
+.modal {
+  margin: auto;
+  display: inline-block;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 15px;
+  width: 100%;
+  max-width: 700px;
+  text-align: left;
+}
+
+.modal-close {
+  float: right;
+  -webkit-appearance: none;
+  border-color: blue;
+}
+
+.modal h1 {
+  margin-top: 0;
+  text-transform: capitalize;
+}
+
+.modal p {
+
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+
+
+/* Pokémon image styling */
+.pokemon-image-details-container > img {
+  margin-top: 40px;
+  margin-left: 300px;
+  height: 600px;
+  display: none;
+}

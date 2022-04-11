@@ -3,7 +3,7 @@ let pokemonRepository = (function() {
   //Pokemon List Array with nested Objects
   let pokemonList = [];
   // API link for the Pokemon repository
-  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=10';
+  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/';
   // Modal container
   let modalContainer = document.querySelector('#modal-container');
 
@@ -76,21 +76,25 @@ let pokemonRepository = (function() {
   function showDetails(item) {
     pokemonRepository.loadDetails(item).then(function() {
       showModal(item);
-      console.log(item)
     })
   }
 
   // showModal function
   function showModal(pokemon) {
+    let modalContainer = document.querySelector('#modal-container');
+
+    // clear any existing model content
     modalContainer.innerHTML = '';
 
     let modal = document.createElement('div');
     modal.classList.add('modal');
 
+    // add new modal content
     let closeButtonElement = document.createElement('button');
     closeButtonElement.classList.add('modal-close');
     closeButtonElement.innerText = 'Close';
-    // hideModal close button
+
+    // close model 
     closeButtonElement.addEventListener('click', hideModal);
 
     let titleElement = document.createElement('h1');
@@ -136,8 +140,6 @@ let pokemonRepository = (function() {
       hideModal();
     }
   });
-
-
 
   return {
     add: add,

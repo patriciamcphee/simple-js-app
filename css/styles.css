@@ -74,7 +74,7 @@ span {
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;  /* displays modal in front of main content */
   overflow: auto; /* allows scrolling content exceeds the height */
-  display: grid; /* centers the modal */
+  display: flex; /* centers the modal */
   text-align: center;
 }
 
@@ -83,16 +83,17 @@ span {
   display: inline-block;
   box-sizing: border-box;
   background: #fff;
-  padding: 15px;
+  padding: 20px;
   width: 100%;
-  max-width: 700px;
+  max-width: 400px;
   text-align: left;
 }
 
 .modal-close {
   float: right;
   -webkit-appearance: none;
-  border-color: blue;
+  border-color: green;
+  border-radius: 10px;
 }
 
 .modal h1 {
@@ -107,12 +108,15 @@ span {
   font-size: 18px;
 }
 
-
-
-/* Pokémon image styling */
-.pokemon-image-details-container > img {
-  margin-top: 40px;
-  margin-left: 300px;
-  height: 600px;
-  display: none;
+@media screen and (max-width: 996px) {
+  .modal {
+    max-width: 300px;
+  }
 }
+
+@media all and (max-width: 750px) {
+  .modal {
+    max-width: 270px;
+  }
+}
+

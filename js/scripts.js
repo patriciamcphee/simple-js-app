@@ -104,7 +104,7 @@ let pokemonRepository = (function() {
     contentElement.innerText = 'Height: '  + '\n' + pokemon.height + 'm';
 
     let typesElement = document.createElement('p');
-    typesElement.innerText = 'Types: '  + '\n' + pokemon.types;
+    typesElement.innerText = 'Type(s): '  + '\n' + pokemon.types;
 
     // Modal image container
     let container = document.querySelector('.pokemon-image-details-container');

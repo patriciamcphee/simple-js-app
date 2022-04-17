@@ -6,7 +6,7 @@ let pokemonRepository = (function() {
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/';
   // Modal container
   let modalContainer = document.querySelector('#modal-container');
-
+  let pokemonImage = document.createElement('img');
   // Public functions
   function add(pokemon) {
     if (
@@ -104,11 +104,8 @@ let pokemonRepository = (function() {
     contentElement.innerText = 'Height: '  + '\n' + pokemon.height + 'm';
 
     let typesElement = document.createElement('p');
-    typesElement.innerText = 'Type(s): '  + '\n' + pokemon.types;
-
-    // Modal image container
-    let container = document.querySelector('.pokemon-image-details-container');
-    let pokemonImage = document.createElement('img');
+    typesElement.innerText = 'Type: '  + '\n' + pokemon.types;
+ 
     pokemonImage.src = pokemon.imageUrl;
 
     modal.appendChild(closeButtonElement);

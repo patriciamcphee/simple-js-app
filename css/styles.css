@@ -139,7 +139,8 @@ h2 {
 
 /* Accordion button on About page */
 
-.accordion-header > .accordion-button:focus {
+.accordion-header > .accordion-button:focus,
+.accordion-button:hover {
   color: black;
   font-size: large;
   background-color: rgb(250, 214, 29);

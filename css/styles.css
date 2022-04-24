@@ -21,16 +21,11 @@ body {
 }
 
 .coverText {
-  flex: 1 1 100px;
+  float: left;
 }
 
 .accordion-body {
   text-align: left;
-}
-
-section{
-  min-height: calc(100vh - 70px); 
-  padding: 20px;
 }
 
 h1, h2, h3 {
@@ -63,7 +58,7 @@ div.alert {
 
 /* container for Pokémon list */
 #pokeList {
-  padding: 70px;
+  padding: 30px;
 }
 
 .pokeBall {
@@ -255,6 +250,9 @@ div.alert {
 
 
 @media all and (min-width: 750px) {
+  #pokeList {
+    padding: 10%;
+  }
   .modal {
     max-width: 270px;
   }

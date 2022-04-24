@@ -12,7 +12,7 @@ body {
 } 
 
 #poketron {
-  padding: 20px;
+  padding: 20px 0px;
 }
 
 #poketron-about {
@@ -21,6 +21,7 @@ body {
 }
 
 .coverText {
+  padding: 10px 0px;
   float: left;
 }
 
@@ -63,7 +64,7 @@ div.alert {
 
 .pokeBall {
   align-content: center;
-  padding: 10px;
+  padding: 10px 0px;
 }
 
 .pokemon-button {
@@ -239,6 +240,9 @@ div.alert {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+  #poketron {
+    padding: 10px 0px;
+  }
   #poketron-about {
     padding: 20px;
     min-height: calc(100vh - 200px); 
@@ -252,10 +256,26 @@ div.alert {
 
 @media all and (min-width: 750px) {
   #pokeList {
-    padding: 10%;
+    padding: 20px 50px;
   }
   .modal {
     max-width: 270px;
+  }
+  .pokeBall {
+    max-inline-size: 65%;
+  }
+  .coverText {
+
+  }
+  #poketron-about {
+    padding: 20px;
+    min-height: calc(100vh - 200px); 
+  }
+}
+
+@media all and (min-width: 995px) {
+  #pokeList {
+    padding: 30px 70px;
   }
   .pokeBall {
     max-inline-size: 65%;
@@ -265,7 +285,6 @@ div.alert {
     min-height: calc(100vh - 200px); 
   }
 }
-
 
 
 

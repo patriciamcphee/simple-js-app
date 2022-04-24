@@ -67,10 +67,8 @@ div.alert {
 }
 
 .pokeBall {
-  float: left;
-  width: 100%;
-  margin-right: 20px;
-  padding: 20px;
+  align-content: center;
+  padding: 10px;
 }
 
 .pokemon-button {
@@ -166,6 +164,12 @@ div.alert {
 
 /* Accordion button on About page */
 
+
+
+#aboutDescription {
+  padding: 30px;
+}
+
 .accordion-header > .accordion-button:focus,
 .accordion-button:hover {
   color: black;
@@ -235,23 +239,34 @@ div.alert {
   text-align: center;
 }
 
-@media (min-width: 375px) {
+@media screen and (min-width: 280px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
-
-}
-
-@media screen and (max-width: 996px) {
-  .modal {
-    max-width: 300px;
+  #poketron-about {
+    padding: 20px;
+    min-height: calc(100vh - 200px); 
+  }
+  .pokeBall {
+    max-inline-size: 50%;
   }
 }
 
 
-@media all and (max-width: 750px) {
+
+@media all and (min-width: 750px) {
   .modal {
     max-width: 270px;
   }
+  .pokeBall {
+    max-inline-size: 65%;
+  }
+  #poketron-about {
+    padding: 20px;
+    min-height: calc(100vh - 200px); 
+  }
 }
+
+
+
 

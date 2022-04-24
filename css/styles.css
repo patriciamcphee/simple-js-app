@@ -17,7 +17,7 @@ body {
 
 #poketron-about {
   padding: 20px;
-  min-height: calc(100vh - 200px); 
+ 
 }
 
 .coverText {
@@ -60,6 +60,8 @@ div.alert {
 /* container for Pokémon list */
 #pokeList {
   padding: 30px;
+
+
 }
 
 .pokeBall {
@@ -196,8 +198,10 @@ div.alert {
 
 
 
-.cover-container {
-  max-width: 42em;
+.page-container {
+  margin-top: 120px;
+  max-width: 45em;
+
 }
 
 
@@ -245,7 +249,8 @@ div.alert {
   }
   #poketron-about {
     padding: 20px;
-    min-height: calc(100vh - 200px); 
+
+    margin-bottom: 200px;
   }
   .pokeBall {
     max-inline-size: 50%;
@@ -269,7 +274,8 @@ div.alert {
   }
   #poketron-about {
     padding: 20px;
-    min-height: calc(100vh - 200px); 
+    margin-bottom: 300px;
+    min-height: calc(100vh - 300px);
   }
 }
 
@@ -282,7 +288,7 @@ div.alert {
   }
   #poketron-about {
     padding: 20px;
-    min-height: calc(100vh - 200px); 
+
   }
 }
 

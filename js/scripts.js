@@ -1,12 +1,12 @@
 let pokemonRepository = (function() {
-
   //Pokemon List Array with nested Objects
   let pokemonList = [];
-  // API link for the Pokemon repository
+  // API link for the Pokemon repository - no limit
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/';
   // Modal container
   let modalContainer = document.querySelector('#modal-container');
   let pokemonImage = document.createElement('img');
+
   // Public functions
   function add(pokemon) {
     if (
@@ -67,7 +67,7 @@ let pokemonRepository = (function() {
       item.types = [];
       details.types.forEach(function(detail) {
         item.types.push(' ' + detail.type.name);
-      })
+      });
     }).catch(function(e) {
       console.error(e);
     });

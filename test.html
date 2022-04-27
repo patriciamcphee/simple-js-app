@@ -3,7 +3,7 @@
 <head>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <meta name="description" content="A simple Pokédex app built with JavaScript and Bootstrap 5.">
@@ -53,27 +53,55 @@
                 </form>  
             </div>
         </div>
-
 </div>
-
 </section>
 
 
-<div id="pokeList" class="container-fluid bg-dark">
-
+    <div class="container justify-content-lg-center"  id="pokeList">
         <h1 class="display-4 text-white">Featured</h1>
         <!-- Pokédex Section -->
-        <div class="row row-content align-items-center">
-            <div class="col-12 ">
-                <ul class="pokemon-list list-unstyled"></ul>
+            <div class="row row-content">
+                <div class="col-lg-4 col-md-6 align-items-center">
+                 <!--    <ul class="list-group pokemon-list" data-toggle="modal" data-target="#modal-container"></ul>   -->
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+
+
+
+                </div>
+                <div class="sr-only">List of pokemon</div>
             </div>
         </div>
-        <!-- Modal container -->
-        <div class="row" id="modal-container">
-            <div class="modal-dialog" role="content"></div>
-        </div>
 
-    </div>   
+    
+        
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
 <footer class="footer  text-center text-white bg-dark">
   <p>Patricia McPhee | April 2022<br /><span style="font-size: smaller;">CareerFoundry Fullstack Achievement</span></p>

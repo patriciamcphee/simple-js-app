@@ -5,12 +5,19 @@
   box-sizing: border-box;
 }
 
+.page-container {
+  margin-top: 120px;
+}
+
+#aboutContainer {
+  padding: 0px;
+}
+
 body {
   font-family: 'Droid Serif';
   line-height: 2em;
   font-size: 15px;
-}
-
+} 
 
 h1, h2, h3 {
   font-family: 'Yanone Kaffeesatz';
@@ -20,13 +27,59 @@ h1, h2, h3 {
 
 h1 {
   font-size: 42px;
+  margin-top: 20px;
 }
 
 h2 {
   font-size: 32px;
 }
 
+footer {
+  padding: 10px;
+}
+
+span {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+
+/*
+ * Header
+ */
+
+ .navbar-brand {
+  font-family: 'Yanone Kaffeesatz';
+}
+
+ .nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
 /* Pokémon List */
+
+#pokemonList {
+  padding: 20px 0px;
+}
+
 .pokemon-list {
   list-style-type: none;
 }
@@ -36,64 +89,25 @@ h2 {
   border: 2px solid #e7e7e7;
   border-radius: 10px;
   color: black;
-  padding: 16px 32px;
-  text-align: left;
+  padding: 10px;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-  width: 250px;
   text-transform: capitalize;
 }
 
-.pokemon-button:hover {
+.pokemon-button:hover  {
   border-color: limegreen;
   background-color: palegreen;
 }
 
-span {
-    font-size: 1.2em;
-    font-weight: bolder;
-  }
-  
-/* Modal Styling */
-#modal-container {
-  display: none;
+.pokemon-button:focus {
+  border-color: limegreen;
 }
 
-#modal-container.is-visible {
-  position: fixed;
-  padding: 20px;
-  box-sizing:content-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 999;  /* displays modal in front of main content */
-  overflow: auto; /* allows scrolling content exceeds the height */
-  display: grid; /* centers the modal */
-  text-align: center;
-}
-
-.modal {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  background: #fff;
-  padding: 15px;
-  width: 100%;
-  max-width: 700px;
-  text-align: left;
-}
-
-.modal-close {
-  float: right;
-  -webkit-appearance: none;
-  border-color: blue;
-}
+/* Modal styling */
 
 .modal h1 {
   margin-top: 0;
@@ -101,18 +115,8 @@ span {
 }
 
 .modal p {
-
   text-transform: capitalize;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
 
-
-
-/* Pokémon image styling */
-.pokemon-image-details-container > img {
-  margin-top: 40px;
-  margin-left: 300px;
-  height: 600px;
-  display: none;
-}

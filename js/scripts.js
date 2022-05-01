@@ -3,7 +3,7 @@ let pokemonRepository = (function() {
   //Pokemon List Array with nested Objects
   let pokemonList = [];
   // API link for the Pokemon repository
-  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/';
+  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
   // Modal container
   let modalContainer = document.querySelector('#modal-container');
 

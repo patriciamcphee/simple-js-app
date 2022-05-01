@@ -1,11 +1,13 @@
 let pokemonRepository = (function() {
-
   //Pokemon List Array with nested Objects
   let pokemonList = [];
+
   // API link for the Pokemon repository
+
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/';
   // Modal container
   let modalContainer = document.querySelector('#modal-container');
+  let pokemonImage = document.createElement('img');
 
   // Public functions
   function add(pokemon) {
@@ -77,17 +79,21 @@ let pokemonRepository = (function() {
   function showDetails(item) {
     pokemonRepository.loadDetails(item).then(function() {
       showModal(item);
+
     });
+
   }
 
   // showModal function
   function showModal(pokemon) {
+
     let modalBody = $('.modal-body');
     let modalTitle = $('.modal-title');
     let modalHeader = $('.modal-header');
 
     modalTitle.empty();
     modalBody.empty();
+
 
     let titleElement = document.createElement('h1');
     titleElement.innerText = pokemon.name;
@@ -96,11 +102,13 @@ let pokemonRepository = (function() {
     contentElement.innerText = 'Height: ' + pokemon.height + 'm';
 
     let typesElement = document.createElement('p');
+
     typesElement.innerText = 'Types: ' + pokemon.types;
 
     // Modal image container
     let container = document.querySelector('.pokemon-image-details-container');
     let pokemonImage = document.createElement('img');
+
     pokemonImage.src = pokemon.imageUrl;
 
     //modal.appendChild(closeButtonElement);
@@ -109,7 +117,6 @@ let pokemonRepository = (function() {
     modalBody.append(typesElement);
     modalBody.append(pokemonImage);
   }
-
 
   return {
     add: add,

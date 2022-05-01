@@ -1,15 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 
-*{
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-:root {
-  --background-color: #212529;
-  --background-color-darker: #909090;
-  --background-color-lighter: #c3c3c3;
+.page-container {
+  margin-top: 120px;
+}
+
+#aboutContainer {
+  padding: 0px;
 }
 
 body {
@@ -18,11 +19,40 @@ body {
   font-size: 15px;
 } 
 
+h1, h2, h3 {
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 42px;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+footer {
+  padding: 10px;
+}
+
+span {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+
 /*
  * Header
  */
 
-.nav-masthead .nav-link {
+ .navbar-brand {
+  font-family: 'Yanone Kaffeesatz';
+}
+
+ .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 700;
   color: rgba(255, 255, 255, .5);
@@ -44,61 +74,22 @@ body {
   border-bottom-color: #fff;
 }
 
-.page-container {
-  margin-top: 120px;
+/* Pokémon List */
 
-}
-
-/* Jumbotron for index and about */
-#poketron, #poketron-about {
+#pokemonList {
   padding: 20px 0px;
 }
 
-/* Pokeball img in jumbotron */
-.pokeBall {
-  align-content: center;
-  padding: 0px 0px 10px 0px;
-}
-
-.coverText {
-  padding: 0px 0px 20px 0px;
-  float: left;
-}
-
-h1, h2, h3 {
-  font-family: 'Yanone Kaffeesatz';
-  font-weight: 400;
-  margin-bottom: 0;
-}
-
-h1 {
-  font-size: 42px;
-}
-
-h2 {
-  font-size: 32px;
-}
-
-/* Pokémon list */
-.list-group-item {
-  border: none;
-  background-color: var(--background-color);
-  margin: 0px -20px;
-}
-
-#pokeList {
-  border-top: 1px solid var(--background-color-lighter);
-  padding: 20px;
+.pokemon-list {
+  list-style-type: none;
 }
 
 .pokemon-button {
   background-color: #e7e7e7;
   border: 2px solid #e7e7e7;
   border-radius: 10px;
-  width: 100%;
   color: black;
   padding: 10px;
-  text-align: left;
   text-decoration: none;
   font-size: 16px;
   margin: 4px 2px;
@@ -107,31 +98,16 @@ h2 {
   text-transform: capitalize;
 }
 
-.pokemon-button:hover {
-  border-color: 	#40b088;
-  background-color: 	#70c8a0;
+.pokemon-button:hover  {
+  border-color: limegreen;
+  background-color: palegreen;
 }
 
-
-/* Pokémon image styling */
-.pokemon-image-details-container > img {
-  margin-top: 40px;
-  margin-left: 300px;
-  height: 600px;
-  display: none;
+.pokemon-button:focus {
+  border-color: limegreen;
 }
 
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-
-  
-/* Modal Styling */
-
+/* Modal styling */
 
 .modal h1 {
   margin-top: 0;
@@ -143,84 +119,4 @@ h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
-
-
-
-/* Accordion button on About page */
-
-.accordion-body {
-  text-align: left;
-}
-
-#aboutDescription {
-  padding: 30px 0px;
-  float: left;
-}
-
-.accordion-header > .accordion-button:focus,
-.accordion-button:hover {
-  color: black;
-  font-size: large;
-  background-color: rgb(250, 214, 29);
-  box-shadow: 0 0 0.5rem rgba(129,30,9,0.95);
-}
-
-.accordion-header > .accordion-button:after {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
-  transform: rotate(-180deg);
-}
-
-
-
-
-.footer {
-  margin: 0px auto;
-  padding: 20px;
-  text-align: center;
-  max-height: 100px;
-}
-
-@media screen and (min-width: 280px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-  #poketron {
-    padding: 10px 0px;
-  }
-  #poketron-about {
-    padding: 20px;
-
-    margin-bottom: 200px;
-  }
-  .pokeBall {
-    max-inline-size: 50%;
-  }
-}
-
-
-
-@media all and (min-width: 750px) {
-
-  .pokeBall {
-    max-inline-size: 65%;
-  }
-  #poketron-about {
-    padding: 20px;
-    margin-bottom: 300px;
-    min-height: calc(100vh - 300px);
-  }
-}
-
-@media all and (min-width: 995px) {
-
-  .pokeBall {
-    max-inline-size: 65%;
-  }
-  #poketron-about {
-    padding: 20px;
-
-  }
-}
-
-
 

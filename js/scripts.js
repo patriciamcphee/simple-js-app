@@ -107,9 +107,10 @@ let pokemonRepository = (function() {
 
     //modal.appendChild(closeButtonElement);
     modalTitle.append(titleElement);
+    modalBody.append(pokemonImage);
     modalBody.append(contentElement);
     modalBody.append(typesElement);
-    modalBody.append(pokemonImage);
+
   }
 
 

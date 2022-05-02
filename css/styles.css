@@ -89,14 +89,10 @@ span {
   padding: 20px 0px;
 }
 
-.modal-body>.img {
-  height: 150px;
-  width: 150px;
-}
-
 .pokemon-list {
   list-style-type: none;
 }
+
 
 .pokemon-button {
   background-color: #e7e7e7;
@@ -134,5 +130,10 @@ span {
   text-transform: capitalize;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
+}
+
+.modal img {
+  height: 200px;
+  width: auto;
 }
 

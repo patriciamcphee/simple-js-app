@@ -24,6 +24,7 @@ let pokemonRepository = (function() {
     return pokemonList;
   }
 
+
   function addListItem(pokemon) {
     let pokemonList = document.querySelector('.pokemon-list');
     let listItem = document.createElement('li');
@@ -40,6 +41,7 @@ let pokemonRepository = (function() {
       showDetails(pokemon);
     });
   }
+
 
   function loadList() {
     return fetch(apiUrl).then(function(response) {
@@ -105,9 +107,10 @@ let pokemonRepository = (function() {
 
     //modal.appendChild(closeButtonElement);
     modalTitle.append(titleElement);
+    modalBody.append(pokemonImage);
     modalBody.append(contentElement);
     modalBody.append(typesElement);
-    modalBody.append(pokemonImage);
+
   }
 
 

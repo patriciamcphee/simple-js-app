@@ -3,5 +3,8 @@
     "jquery": "^3.6.0",
     "lite-server": "^2.6.1",
     "micromodal": "^0.4.10"
+  },
+  "devDependencies": {
+    "prettier": "2.6.2"
   }
 }

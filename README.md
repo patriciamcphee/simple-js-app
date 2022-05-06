@@ -5,7 +5,7 @@ This was my first achievement project for the CareerFoundry Fullstack Web Develo
 
 ## List of technologies used
 
-- HTML/CSS Bootstrap 5
+- HTML/CSS Bootstrap 4
 
 - Javascript/JQuery
 

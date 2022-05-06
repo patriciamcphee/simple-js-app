@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+* *::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .page-container {
   margin-top: 120px;
 }
@@ -76,13 +81,18 @@ span {
 
 /* Pokémon List */
 
+#searchList {
+  padding: 10px 0px;
+}
+
 #pokemonList {
-  padding: 20px 10px;
+  padding: 20px 0px;
 }
 
 .pokemon-list {
   list-style-type: none;
 }
+
 
 .pokemon-button {
   background-color: #e7e7e7;
@@ -107,6 +117,8 @@ span {
   border-color: limegreen;
 }
 
+
+
 /* Modal styling */
 
 .modal h1 {
@@ -118,5 +130,10 @@ span {
   text-transform: capitalize;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
+}
+
+.modal img {
+  height: 150px;
+  width: auto;
 }
 
